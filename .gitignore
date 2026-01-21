@@ -1,0 +1,14 @@
+# Binários
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Testes e builds
+*.test
+*.out
+
+# Pastas de IDE (opcional)
+.vscode/
+.idea/
