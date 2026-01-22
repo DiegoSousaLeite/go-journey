@@ -2,10 +2,9 @@ package main
 
 import "fmt"
 
-func modificarValor(valor int) {
-	fmt.Printf("Inside function before change: %d\n", valor)
-	valor = 20
-	fmt.Printf("Inside function: %d\n", valor)
+// Função que modifica o valor original usando ponteiro
+func mofificarOriginal(valor *int) {
+	*valor = *valor * 2
 }
 
 func main() {
@@ -13,8 +12,8 @@ func main() {
 	numero := 10
 	fmt.Printf("Before function call: %d\n", numero)
 	
-	//Todos os parâmetros em Go são passados por cópia e não por referência
-	modificarValor(numero)
+	// Passando o endereço da variável numero
+	mofificarOriginal(&numero)
 	
 	fmt.Printf("After function call: %d\n", numero)
 }
