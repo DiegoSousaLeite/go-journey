@@ -12,3 +12,5 @@
 # Pastas de IDE (opcional)
 .vscode/
 .idea/
+
+.DS_Store
