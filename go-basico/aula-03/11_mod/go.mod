@@ -12,5 +12,7 @@ go 1.25.6
 // 	github.com/spf13/pflag v1.0.9 // indirect
 // )
 
-//remover dependências não utilizadas:
+//Adicionar Dependências Faltantes: 
+//Ele inspeciona todos os seus arquivos .go, encontra as importações (import) de pacotes que não estão listados no go.mod e os adiciona.
+//Remover Dependências Desnecessárias: Ele remove do go.mod e go.sum quaisquer dependências que são listadas, mas que não são mais utilizadas em nenhum lugar do seu código.
 // go mod tidy
